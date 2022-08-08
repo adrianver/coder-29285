@@ -1,0 +1,114 @@
+.ibody {
+    background-color: #ecf0f3;
+    margin: 30px auto;
+    width: 450px;
+    padding: $small $medium;
+    
+        
+    border: {
+        border: 1px solid #bfd8eb;
+        radius: 20px;
+        sizing: border-box;   
+          }
+}
+    .jumbotron {
+    background-color: #bfd8eb;
+  }
+ 
+
+  .jumbotron h1 {
+    color: $alternativo;
+    text-shadow: 0px 1px white;
+    margin: 0;
+    }
+   
+  label {
+    
+  margin-top: 6px;
+  color: $secundario;
+  
+  
+  font: {
+  weight: bolder;
+  size: $chica;  
+  } 
+  
+  & h4 {
+  text-shadow: none;  
+  font-weight: bolder;
+  }
+  
+  }   
+ textarea {
+
+ min-height: 100px;
+ max-height: 200px;
+ max-width: 100%;
+
+}
+    
+.consultas {
+
+  margin-top: 40px;
+}
+
+.consultas h4 {
+
+font-size: $mediano;
+font-weight: bolder;
+text-decoration: underline 2px black;
+text-transform: uppercase;
+}
+
+
+.consultas p {
+
+font-size: $base;
+
+}
+
+
+.btn { 
+
+width:auto;
+height:40px;
+background-color:rgb(191, 224, 240);
+text-align: $principal;
+color:black;
+margin: 5px;  
+ 
+    border: {
+      radius:10px;
+      border:1px solid transparent;
+  }
+  }
+       
+
+.btn-warning {
+
+  @extend .btn;
+  background-color: rgb(246, 218, 181);
+
+}
+
+/*------------------RESOLUCION----------*/
+    
+  @media (max-width: 480px) {
+    .ibody {
+    width: 95%;
+    }
+    .jumbotron h1{
+     font-size: 1.25rem; 
+    }
+    .titulo h1 {
+    font-size: 1.35rem;
+    }
+    .titulo h2 {
+      font-size: 1.10rem;
+    }
+      .titulo h3 {
+    font-size: 1rem;
+    }  
+    }
+    
+  

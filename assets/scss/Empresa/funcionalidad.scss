@@ -1,0 +1,48 @@
+.d-block {
+
+border: 8px rgb(93, 104, 104) double;
+height: 600px;
+}
+
+.actividad {
+
+margin-bottom: 50px;   
+
+}
+
+.card_m {
+
+margin: 50px;    
+background-color: ghostwhite;
+
+}
+
+/*-------------------FUENTES-----------*/
+.card-header h2 a {
+
+color: #155b95;
+text-decoration: none;
+  font: {
+    size: 1.20rem;
+    weight: bolder;
+  }
+}
+
+.empresa p {
+    font-size: $p; 
+    text-align: $secundaria;         
+    margin: $medium;
+    } 
+/*-----------RESOLUCION----------------*/
+
+
+@media screen and (max-width:500px) {
+
+    .card-header h2 a {
+        font-size: $base;
+    }
+    .card-body p {
+        font-size: $chica;
+    }
+}
+

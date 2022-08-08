@@ -1,0 +1,214 @@
+.actividades {  
+
+width: auto;
+height: auto;
+margin: 10px;
+padding: 10px;  
+display: grid;
+grid-template-areas:
+        "img "
+        "img"
+        "img"
+        "img"
+        ;
+border: 2px solid white;
+column-gap: 10px;
+row-gap: 10px;
+justify-content: center;
+   
+}
+/*-----------FUENTES----------*/ 
+.actividades p {
+
+font-size: $p; 
+text-align: $secundaria;         
+
+}
+
+.aventura p {
+
+text-align: $principal;
+font-size: $mediano;
+margin-top: $medium;  
+}
+
+.icono h1 {
+
+color:$general;
+text-align: $principal;
+
+      font: {
+
+      family: $font-principal;
+      weight: bolder;
+      size:$mediano;       
+    }
+}
+
+#parrafo p  {
+
+   font-size: 1.25rem;
+   text-align: justify;
+        
+}
+/*-----------------FIN----------*/
+.img {
+
+transition: all 1s ;
+}
+    
+.actividades img {
+
+width: 300px;
+height: 250px;
+transition: all 1s ;
+border: double bisque;
+padding: 5px;
+margin: 10px;
+border-radius: 20px 0px 20px 0px;
+
+}
+
+.animation {
+
+font-size: 1.25rem;
+color:rgba(105, 36, 36, 0.973);
+animation-name:animation;
+animation-iteration-count:2;
+animation-timing-function: linear;
+animation-duration:4s;
+animation-delay: 2s;
+
+}   
+    
+@keyframes animation {
+
+0% {font-size:1.25rem; color: rgba(105, 36, 36, 0.973);}
+25% {font-size:1.50rem; color:rgb(124, 116, 116);}
+75% {font-size:1.75rem; color:#42adad;}
+100%{font-size:2.00rem; color:#c3c4c0;}
+
+}
+    
+#ciclismo, #canotaje, #parapente, #paracaida, 
+#trekking, #senderismo, #vuelo, #cabalgata{             
+
+max-width: 1500px;
+margin: auto;
+         
+}
+    
+.containerMultiaventura {
+
+@include flex (none,space-between,none);
+background-color: whitesmoke;
+padding: 20px;        
+border: #c3c4c0 solid 5px;    
+margin: 30px;
+        
+}
+
+.icono img {
+
+    padding: {
+         bottom: 15px;
+         right: 10px;
+}
+}    
+.icono {
+    
+margin-top: 20px;
+display: flex;
+justify-content: center;        
+} 
+
+.actividadRecreativa {
+
+width: 600px;
+
+}
+
+.multiaventura {
+
+margin-top: 20px;
+display: flex;  
+width: 900px;
+padding-right: 40px; 
+
+}
+
+.multiaventura img {
+   
+width: 100%;
+height: auto;
+border: #c3c4c0 2px solid;
+}
+
+/*-------------RESOLUCION--------------*/
+
+
+
+@media screen and (max-width: 1150px) {
+         
+.multiaventura {
+
+width: 100%;
+}
+.multiaventura img {       
+height: auto;
+margin: 10px;        
+
+}      
+
+.containerMultiaventura {
+flex-wrap: wrap;
+}
+   
+.actividadRecreativa{
+width: 100%;
+}  
+   
+#parrafo p  {
+
+font-size: $p;
+    
+}
+}
+/*----------------------RESOLUCION----------------*/
+ @media screen and (min-width: 800px) {
+    .actividades {  
+    grid-template-areas:
+    "img img  "
+    "img img"
+    "img img"
+    "img img"
+       ;
+    margin: 10px;
+    padding: 10px;  
+    justify-content:space-around;
+    }
+    
+    .actividades img {
+    width: 370px;
+    height: 230px;
+    }   
+    }
+    @media screen and (min-width: 1300px) {
+    .actividades {  
+    width: auto;
+    grid-template-areas:
+     "img img img  "
+     "img img img "
+     "img img img "
+     "img img img "
+         ;
+      margin: 10px;
+      padding: 10px;  
+    }
+   
+    img:hover {
+    transform: scale(1.2, 1.2);
+    border: none;    
+    }  
+    }
+    

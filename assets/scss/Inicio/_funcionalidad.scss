@@ -1,0 +1,25 @@
+.card {
+    margin:$small;
+    height: auto;
+    padding: $small;  
+}
+    .card-img-top {
+    padding: 5px;
+}
+
+.mas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;         
+}
+.mas .btn {
+    background-color: rgb(223, 182, 182);
+    color: $alternativo;
+    font-weight: bolder;  
+    font-size: 13px;       
+}
+/*----------FUENTES-----------*/
+.card-body h1 {
+font-size: $mediano;
+}
+    
